@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>alurabooks</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Poppins:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+        
+        
+    </head>
+    <body>
+        <header class="cabeçalho">
+        <div class="container">
+            
+            <input type="checked" id="menu" class="container__botao">
+            <label for="menu" class="container__rotulo">
+            <span class="cabecalho__menu-hamburguer container__imagem"></span>
+        </label>
+        <!-- Ao usar o atributo for, com o valor igual ao id do input,
+         você está associando a label com o input. Dessa maneira, ao clicar na imagem que está dentro dessa label,
+          irá interagir com o checkbox, fazendo essa detecção do clique do usuário.-->
+       
+        <ul class="lista-menu">
+            <li class="lista-menu__titulo">Categorias</li>
+            <li class="lista-menu__item"><a href="#" class="lista-menu__link">programaçaõ</a></li>
+            <li class="lista-menu__item"><a href="#" class="lista-menu__link">front-end</a></li>
+            <li class="lista-menu__item"><a href="#" class="lista-menu__link">infraestrutura</a></li>
+            <li class="lista-menu__item"><a href="#" class="lista-menu__link">business</a></li>
+            <li class="lista-menu__item"><a href="#" class="lista-menu__link">design & UX</a></li>
+        </ul> 
+            <img src="./asests/losago.png" alt="logo da alurabooks " class="container__imagem">
+            <h1 class="container__titulo"><b class="container__titulo--negrito">alura</b>books</h1>
+        </div>
+
+         <ul class="opções">
+          <input type="checkbox" id="opções__menu" class="opções__botão">
+          <label for="opções__menu" class="opções__rotulo">
+          <li class="opções__item"><a href="#" class="opções__link">Categorias</a></li>
+        </label>
+        <ul class="lista-menu">
+          
+          <li class="lista-menu__item"><a href="#" class="lista-menu__link">programaçaõ</a></li>
+          <li class="lista-menu__item"><a href="#" class="lista-menu__link">front-end</a></li>
+          <li class="lista-menu__item"><a href="#" class="lista-menu__link">infraestrutura</a></li>
+          <li class="lista-menu__item"><a href="#" class="lista-menu__link">business</a></li>
+          <li class="lista-menu__item"><a href="#" class="lista-menu__link">design & UX</a></li>
+      </ul> 
+          <li class="opções__item"><a href="#" class="opções__link">Favoritos</a></li>
+          <li class="opções__item"><a href="#" class="opções__link">Minha estante</a></li>
+         </ul>
+
+        <div class="container">
+            <a href="#"><img src="./asests/Favoritos.jpg" alt="meus favoritos" class="container__imagem 
+              container__imagem-transparente" ></a>
+            <a href="#" class="container__link">
+              <img src="./asests/Sacola.png" alt="carrinhos de compras" class="container__imagem">
+              <p class="container__texto"> Minha sacola</p>
+            </a>
+            <a href="#" class="container__link">
+              <img src="./asests/Vector.png" alt="meu perfil" class="container__imagem">
+              <p class="container__texto"> Meu perfil</p>
+            </a>
+        </div>
+</header>
+<section class="banner">
+    <h2 class="banner__titulo">Já sabe por onde começar?</h2>
+    <p class="banner__texto">Encontre em nossa estante o que precisa para seu desenvolvimento!</p>
+    <input type="search" class="botao__pesquisa" placeholder="Qual será sua próxima leitura?">
+    <!--input type "search" de pesquisa e o placeholder e nome que aparecera na barra de pesquisa-->
+    <!--dentro do imput dar pra estilizar o placehold utilizando botao__pesquisa::placehold-->
+</section>
+<section  class="carrosel"> 
+<h2 class="carrosel__titulo"> ultimos lançamentos</h2>
+<!-- Slider main container -->
+<div class="carrosel__container">
+    <div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+    
+        <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+      <!-- Slides -->
+   
+      <div class="swiper-slide"><img src="asests/ApacheKafka.svg"alt="livro sobre apache kafka e spring boot da alura bbos"></div>
+      <div class="swiper-slide"><img src="asests/Liderança (1).svg"alt="livro sobre liderança em design da alura books"></div>
+      <div class="swiper-slide"><img src="asests/Javascript (1).svg"alt="livro sobre javascript assertivo da alura book"></div>
+      <div class="swiper-slide"><img src="asests/Guia Front-end (1).svg"alt="guia livro front-end"></div>
+      <div class="swiper-slide"><img src="asests/Portugol (1).svg"alt="livro sobre portugol"></div>
+      <div class="swiper-slide"> <img src="asests/Acessibilidade (1).svg"alt="livro sobre acessibilidade"></div>
+    </div> 
+    
+    
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+
+    <div class="card">
+        <!--1 linha-->
+        <div class="card__descrição">
+            <div class="descrição">
+                <h3 class="descrição_titulo">Talvez você também se interesse por...</h3>
+                <h2 class="descrição_titulo-livro">Angula 11 e farebase</h2>
+                <p class="desrição__texto">Construindo uma aplicação integrada com a plataforma do Google.</p>
+            </div>
+            <!--2 coluna-->
+            <img src="asests/Perfil-escritora 2.svg" class="descrição_imagem">
+        </div>
+        <!--2 linha-->
+        <div class="card__botões">
+            <!--1 coluna-->
+            <ul class="botões">
+                <li class="botões_item"><img src="asests/Favoritos.jpg" alt="favoritar livro"></li>
+                <li class="botões_item"><img src="asests/Sacola.png" alt="adicionar no carrinho de compras"></li>
+            </ul>
+            <!--2 coluna-->
+            <a href="#" class="botões__ancora">saiba mais</a>
+        
+          </div>
+    
+      </div>
+
+ </div>
+ </div>
+</section>
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+  <section class="carrosel2">
+    <h3 class="carrosel__titulo2"> mais vendidos</h3>
+    <!-- Slider main container -->
+     <div class="carrosel__container">
+<div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide"><img src="asests/ApacheKafka.svg"></div>
+      <div class="swiper-slide"><img src="asests/Liderança (2).svg" alt="liderança em disign"></div>
+      <div class="swiper-slide"><img src="asests/Javascript (2).svg" alt="teste suas abilidades em javascript"></div>
+      <div class="swiper-slide"><img src="asests/Gestão2.svg" alt="gestão"></div>
+      <div class="swiper-slide"><img src="asests/ApacheKafka.svg"></div>
+      <div class="swiper-slide"><img src="asests/Acessibilidade (1).svg"></div>
+    </div>
+    
+  
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  
+    <!-- If we need scrollbar -->
+    <div class="swiper-scrollbar"></div>
+  </div>
+   <div class="card2">
+    <div class="card2__descriçaõ">
+      <div class="descriçao__conteudo">
+        <img src="asests/Estrelinhas (1).svg" class="imagem__estrelas" alt="imagem a alura books">
+        <h4 class="descrição__titulo2">autora do mes</h4>
+        <h5 class="descrição__titulo3">juliana agarikov</h5>
+        <p class="descrição__texto1">analista de sistemas
+          e escritora, juliana e especialista em 
+        front-end. </p>
+        </div>
+      <img src="asests/coração.svg" class="icone" alt="imagem da alura books">
+      <img src="asests/Sacola.png" class="icone" alt="imagem da alura books">
+    </div>
+    <div class="card2__botões">
+      <img src="asests/imagem de uma escritora.svg" class="imagem__escritora" alt="perfil da escritora da alura books">
+      <a href="# " class="botão"> saiba mais</a>
+    </div>
+  </div>
+</div>
+</section>
+
+<secttion>
+  <div class="tópicos">
+  <h2 class="tópicos__titúlo">TÓPICOS VISITADOS RECENTEMENTE</h2>
+  <ul class="tópicos__listas">
+    <li class="tópicos__item">
+      <a  href="#" class="tópicos__link">androind</a>
+    </li>
+    <li class="tópicos__item">
+      <a  href="#" class="tópicos__link">Marketing Digital</a>
+    </li>
+    <li class="tópicos__item">
+      <a  href="#" class="tópicos__link">Agile</a>
+    </li>
+    <li class="tópicos__item">
+      <a  href="#" class="tópicos__link">Startups</a>
+    </li>
+    <li class="tópicos__item">
+      <a  href="#" class="tópicos__link">HTML & CSS</a>
+    </li>
+    <li class="tópicos__item">
+      <a  href="#" class="tópicos__link">Python</a>
+    </li>
+    <li class="tópicos__item">
+      <a  href="#" class="tópicos__link">OO</a>
+    </li>
+    <li class="tópicos__item">
+      <a  href="#" class="tópicos__link">Java</a>
+    </li>
+  </ul>
+</di>
+</secttion>
+<section class="contato">
+   <div class="contato__descrição">
+  <h3 class="contato__titulo">Fique por dentro das novidades!</h3>
+  <p class="contato__texto">Atualizações de e-books, novos livros, promoções e outros.</p>
+</div>
+  <input type="email" placeholder="cadastre seu e-mail" class="contato__email">
+    </input>
+  
+</section>
+
+ <hr/>
+
+ <footer class="rodapé">
+   <h2 class="rodapé__titulo">Grupo alura</h2>
+   
+   <ul class="lista__rodapé">
+    <li class="lista-rodapé__titulo"> Educação</li>
+    <li class="lista-rodapé__item">
+      <img src="asests/Caelum.svg" alt="logo da casa do código">
+      <a href="#" class="lista-rodapé__link"> caelum</a>
+    </li>
+    <li class="lista-rodapé__item">
+      <img src="asests/CasaDoCodigo.svg" alt="logo da casa do caelum">
+      <a href="#" class="lista-rodapé__link">casa do código</a>
+    </li>
+    </ul>
+
+    <ul class="lista__rodapé">
+      <li class="lista-rodapé__titulo"> Educação online</li>
+    <li class="lista-rodapé__item">
+      <img src="asests/Alura.svg" alt="logo da alura">
+      <a href="#" class="lista-rodapé__link"> Alura</a>
+    </li>
+    <li class="lista-rodapé__item">
+      <img src="asests/AluraEmpresas.svg" alt="logo da empresa">
+      <a href="#" class="lista-rodapé__link"> Alura para empresas</a>
+    </li>
+    <li class="lista-rodapé__item">
+      <img src="asests/AluraLATAM.svg" alt="logo da latam">
+      <a href="#" class="lista-rodapé__link"> Alura latam</a>
+    </li>
+    <li class="lista-rodapé__item">
+      <img src="asests/AluraStart.svg" alt="logo da start">
+      <a href="#" class="lista-rodapé__link"> Alura start</a>
+    </li>
+    <li class="lista-rodapé__item">
+      <img src="asests/MusicDot.svg" alt="logo da musicdot">
+      <a href="#" class="lista-rodapé__link"> Musicdot</a>
+    </li>
+    <li class="lista-rodapé__item">
+      <img src="asests/AluraLingua.svg" alt="logo da aluralingua">
+      <a href="#" class="lista-rodapé__link"> Alura língua</a>
+    </li>
+    <li class="lista-rodapé__item">
+      <img src="asests/PM3.svg" alt="logo da pm3">
+      <a href="#" class="lista-rodapé__link"> PM3</a>
+    </li>
+  </ul>
+
+  <ul class="lista__rodapé">
+    <li class="lista-rodapé__titulo"> Comunidade</li>
+  <li class="lista-rodapé__item">
+    <img src="asests/HipstersTech.svg" alt="logo da HipstersTech">
+    <a href="#" class="lista-rodapé__link"> Hipsters ponto Tech</a>
+  </li>
+  <li class="lista-rodapé__item">
+    <img src="asests/ScubaDev.svg" alt="logo da scubadev">
+    <a href="#" class="lista-rodapé__link"> Scuba dev</a>
+  </li>
+  <li class="lista-rodapé__item">
+    <img src="asests/LayersTech.svg" alt="logo da Layers">
+    <a href="#" class="lista-rodapé__link"> Layers ponto Tech</a>
+  </li>
+  <li class="lista-rodapé__item">
+    <img src="asests/LikeABoss.svg" alt="logo da LikeABoss">
+    <a href="#" class="lista-rodapé__link"> Like a Boss</a>
+  </li>
+  <li class="lista-rodapé__item">
+    <img src="asests/CarreiraSemFronteira.svg" alt="logo da carreira sem fronteira">
+    <a href="#" class="lista-rodapé__link"> Carreira sem Fronteira</a>
+  </li>
+  <li class="lista-rodapé__item">
+    <img src="asests/HipstersTech.svg" alt="logo da HipstersTech">
+    <a href="#" class="lista-rodapé__link"> Hipsters ponto Jobs</a>
+  </li>
+  <li class="lista-rodapé__item">
+    <img src="asests/GUJ.svg" alt="logo da GUJ">
+    <a href="#" class="lista-rodapé__link">GUJ</a>
+  </li>
+</ul>
+
+   
+ </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper('.swiper', {
+  
+  spaceBetween: 10,
+  slidesPerView: 3,
+});
+  </script>
+ 
+</body> 
+    
+</html>
